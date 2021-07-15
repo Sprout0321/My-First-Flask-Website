@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+  <h1>常用 HTML 標記</h1>
+  <hr>
+  <xmp><h1> 標籤用來指定一級/最重要的標題。</xmp>
+  <xmp><p> 標籤用來包含一段文字段落。</xmp>
+  <hr>
+  <h1>開新HTML文檔時常做的宣告</h1>
+  <xmp><!DOCTYPE html></xmp>  
+  <xmp><html lang="en"></html></xmp>
+  <xmp><head></xmp>
+  <xmp>   <meta charset="UTF-8"></xmp>
+  <xmp>   <meta name="viewport" content="width=device-width, initial-scale=1.0"></xmp>
+  <xmp>   <title> Document </title></xmp>
+  <xmp></head></xmp>
+  <xmp><body></xmp>
+  <xmp></body></xmp>
+  <xmp></html></xmp>
+  <hr>
+  <h4>標籤說明</h4>
+  <xmp><!DOCTYPE html> 標籤用來聲明這是一份採用 HTML5 語法標準的文件。</xmp>
+  <xmp><html> 標籤是 HTML 文件的根元素。</xmp>
+  <p>&emsp;&emsp;裡面的 lang="語言" 目的是讓瀏覽器識別網頁的語言</p>
+  <p>&emsp;&emsp;lang="en" 英文</p>
+  <p>&emsp;&emsp;lang="zh-Hant" 繁體中文</p>
+  <xmp><head> 標籤中的包含著不會被顯示在頁面上的內容，用來說明關於該網頁的元資訊 (metadata)。</xmp>
+  <xmp><title> 標籤用來指定該網頁的標題，通常會顯示在瀏覽器的頁籤上。</xmp>
+  <xmp><body> 標籤中包含著會被顯示在頁面上的內容。</xmp>
+  <hr>
+  <h4>常用小技巧</h4>
+  <xmp>一、使用 &emsp; 可以出現類似 Tab 鍵的一段空白的效果。</xmp>
+  <p>二、如何在 HTML 文檔中顯示 HTML 標記符號呢？</p>
+  <p>答案為，使用標籤&lt;xmp&gt;各種符號、空格、原始碼&lt;/xmp&gt;就能顯示所有內容符號，包含各種空格。</p>
+  <hr>
+  <p>參考網站</p>
+  <a href="https://www.fooish.com/html/" target="_blank">HTML (HyperText Markup Language) 教學</a>
+
+{% endblock %}

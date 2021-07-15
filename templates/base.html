@@ -1,0 +1,19 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}
+    {% if title %}
+        {{ title }}
+    {% else %}
+        No title
+    {% endif %}
+{% endblock %}
+
+{% block navbar %}
+    {% include 'navbar.html' %}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    {% block app_content %}{% endblock %}
+    {% block supplement %}{% endblock %}
+</div>
+{% endblock %}

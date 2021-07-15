@@ -1,0 +1,44 @@
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="{{ url_for('index') }}"><span class="glyphicon glyphicon-home" >  - Rice -</span></a>
+      </div>
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">this is from ul
+          <li class="active"><a href="{{ url_for('Link1') }}">Link 1 test page</a></li>
+          <li>               <a href="{{ url_for('Link2') }}">Link 2 HTML</a></li>
+          <li class="active"><a href="{{ url_for('Link3') }}">Link 3</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">選單一<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">SubLink 1</a></li>
+              <li><a href="#">SubLink 2</a></li>
+              <li><a href="#">SubLink 3</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">SubLink 4</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">SubLink 5</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li>               <a href="{{ url_for('Link5') }}">Link 5</a></li>
+          <li class="active"><a href="{{ url_for('Link6') }}">Link 6</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">選單二<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">SubLink 1</a></li>
+              <li><a href="#">SubLink 2</a></li>
+              <li><a href="#">SubLink 3</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">SubLink 4</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>

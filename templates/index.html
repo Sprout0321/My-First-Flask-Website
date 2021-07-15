@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+  <h1>Welcome to RICE.</h1>
+  <hr>
+  <p>Hello, I am Webb.</p>
+  <p>I am learning Python and Flask by building this webssite.</p>
+
+  <hr>
+  <p>你好，我是 Webb。</p>
+  <p>我藉由架設此網站來學習 Python 和 Flask </p>
+  <hr>
+  <div class="panel panel-success">
+    <div class="panel-heading">
+      <h3 class="panel-title">Ｗhat I have learned in Flask</h3>
+    </div>
+    <div class="panel-body">
+      <li><a href="https://pythonhosted.org/Flask-Bootstrap/index.html" target="_blank">Bootstrap</a></li>
+      <p>&emsp;&emsp;Bootstrap 是一個前端的架構，可以提供網站開發者一個快速且簡單的設計環境。</p>
+      <p>&emsp;&emsp;它包含 HTML 與 CSS 基本設計裡面常見的排版、表格、按鈕、表單、導覽、樣板及 Javascript 特效。</p>
+      <p>&emsp;&emsp;它也提供了簡易建立響應式 (RWD) 網站的功能。<a href="https://www.ibest.tw/page01.php" target="_blank">何謂RWD網站？</a></p>
+      <li><a href="https://flask-sqlalchemy.palletsprojects.com/en/2.x/" target="_blank">SQLAlchemy</a></li>
+      <p>&emsp;&emsp;SQLAlchemy 的是 Python 的 SQL 工具包和對象關系映射器，讓應用程序開發人員可以使用上SQL的強大功能和靈活性。</p>
+      <p>&emsp;&emsp;它提供了一套完整的企業級持久化模式，專為高效率和高性能的數據庫訪問而設計，簡單易用用，專門為Python語言而準備。</p>
+      <li><a href="https://flask-wtf.readthedocs.io/en/0.15.x/" target="_blank">WTF</a></li>
+      <li><a href="https://flask-bcrypt.readthedocs.io/en/latest/" target="_blank">Bcrypt</a></li>
+    </div>
+  </div>
+{% endblock %}

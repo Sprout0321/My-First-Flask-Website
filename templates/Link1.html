@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+  <h1>Welcome to RICE Link 1.</h1>
+  <hr>
+  <p>The title of this page is {{ title }}.</p> <!-- 可以用雙大掛號引用app.route設定過的變數 -->
+  <hr>
+  <p>List_of_Builtin_Filters_1 = -3</p>
+  <p>List_of_Builtin_Filters_1 | abs = {{ List_of_Builtin_Filters_1 | abs }}</p>
+  <hr>
+  <p>List_of_Builtin_Filters_2 = 'webb'</p>
+  <p>List_of_Builtin_Filters_2 | capitalize = {{ List_of_Builtin_Filters_2 | capitalize }}</p>
+  <hr>
+  <p>Flask Templates - Custom Filters</p>
+  <p>&emsp;</p>
+  <p>def power(x, y):</p>
+  <p>&emsp;&emsp;return x**y</p>
+  <p>app.jinja_env.filters['powww'] = power</p>
+  <p>&emsp;</p>
+  <p>List_of_Builtin_Filters_1 = -3</p>
+  <p>List_of_Builtin_Filters_1 | powww(4) = {{ List_of_Builtin_Filters_1 | powww(4) }}</p>
+  <p>&emsp;</p>
+  <p>def reverse(str):</p>
+  <p>&emsp;&emsp;return str[::-1]</p>
+  <p>app.jinja_env.filters['revvv'] = reverse</p>
+  <p>&emsp;</p>
+  <p>List_of_Builtin_Filters_2 = 'webb'</p>
+  <p>List_of_Builtin_Filters_2 | revvv = {{ List_of_Builtin_Filters_2 | revvv }}</p>
+{% endblock %}
+
+{% block supplement %}
+  <p>This is supplement of block test at {{ title }}</p>
+{% endblock %}
